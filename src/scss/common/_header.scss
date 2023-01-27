@@ -10,6 +10,11 @@ header {
       position: absolute;
       bottom: 20px;
       left: 0;
+      a {
+        font-weight: 700;
+        color: #fff;
+        font-size: 24px;
+      }
     }
     #gnb {
       position: absolute;
@@ -18,9 +23,11 @@ header {
       li {
         float: left;
         a {
-          font-weight: 700;
+          display: block;
+          padding: 20px 30px;
+          font-weight: 600;
+          font-size: 14px;
           color: #fff;
-          font-size: 24px;
         }
       }
     }

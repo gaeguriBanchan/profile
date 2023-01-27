@@ -1,4 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+/*
+  NavLink
+  : 객체를 이용해서 포커스 스타일 적용
+  : activeStyle='CSS객체' 이라는 props에 적용
+  : to='URI'props 는 필수
+*/
 /*
   a 태그 href를 이용하면 페이지갱신(MPA)
   Link 컴포넌트를 이용하면 컴포넌트 갱신(SPA)
@@ -7,6 +13,7 @@ import { Link } from 'react-router-dom';
  */
 
 const Header = () => {
+  const active = { color: 'hotpink' };
   return (
     <header>
       {/* 레이아웃 div */}
@@ -16,22 +23,34 @@ const Header = () => {
         </h1>
         <ul id='gnb'>
           <li>
-            <Link to='/department'>Department</Link>
+            <NavLink activeStyle={active} to='/department'>
+              Department
+            </NavLink>
           </li>
           <li>
-            <Link to='/community'>Community</Link>
+            <NavLink activeStyle={active} to='/community'>
+              Community
+            </NavLink>
           </li>
           <li>
-            <Link to='/gallery'>Gallery</Link>
+            <NavLink activeStyle={active} to='/gallery'>
+              Gallery
+            </NavLink>
           </li>
           <li>
-            <Link to='/youtube'>Youtube</Link>
+            <NavLink activeStyle={active} to='/youtube'>
+              Youtube
+            </NavLink>
           </li>
           <li>
-            <Link to='/location'>Location</Link>
+            <NavLink activeStyle={active} to='/location'>
+              Location
+            </NavLink>
           </li>
           <li>
-            <Link to='/join'>Join</Link>
+            <NavLink activeStyle={active} to='/join'>
+              Join
+            </NavLink>
           </li>
         </ul>
       </div>
