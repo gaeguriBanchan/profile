@@ -37,12 +37,12 @@ function App() {
       </Route> */}
 
       {/* Route 2번방식 : 인라인 방식의 Router 적용 */}
-      <Route path='department' component={Department} />
-      <Route path='community' component={Community} />
-      <Route path='gallery' component={Gallery} />
-      <Route path='youtube' component={Youtube} />
-      <Route path='location' component={Location} />
-      <Route path='join' component={Join} />
+      <Route path='/department' component={Department} />
+      <Route path='/community' component={Community} />
+      <Route path='/gallery' component={Gallery} />
+      <Route path='/youtube' component={Youtube} />
+      <Route path='/location' component={Location} />
+      <Route path='/join' component={Join} />
 
       <Footer />
     </>
