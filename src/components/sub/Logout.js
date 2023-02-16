@@ -1,9 +1,9 @@
-import React from 'react'
-import { useHistory } from 'react-router-dom'
+import React from "react";
+import { useHistory } from "react-router-dom";
 
 const Logout = () => {
   // 화면이동
-  const history = useHistory()
+  const history = useHistory();
   // 카카오 기능
   // 카카오 로그아웃
   const kakaoLogOut = () => {
@@ -33,12 +33,19 @@ const Logout = () => {
       },
     });
   };
+  // 네이버 로그아웃
+  const naverLogout = () => {
+    localStorage.removeItem("com.naver.nid.access_token");
+    localStorage.removeItem("com.naver.nid.oauth.state_token");
+    history.push("/");
+  };
   return (
     <div>
       <button onClick={kakaoLogOut}>카카오 로그아웃</button>
       <button onClick={memberOut}>카카오 서비스 탈퇴</button>
+      <button onClick={naverLogout}>네이버 로그아웃</button>
     </div>
-  )
-}
+  );
+};
 
-export default Logout
+export default Logout;
