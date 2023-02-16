@@ -14,6 +14,8 @@ import Youtube from './components/sub/Youtube';
 import Location from './components/sub/Location';
 import Join from './components/sub/Join';
 import Schedule from './components/sub/Schedule';
+import Login from './components/sub/Login';
+import Logout from './components/sub/Logout';
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
       <Route path='/youtube' component={Youtube} />
       <Route path='/location' component={Location} />
       <Route path='/join' component={Join} />
+      <Route path='/login' component={Login} />
+      <Route path='/logout' component={Logout} />
 
       <Footer />
     </>
