@@ -1,0 +1,31 @@
+.profile {
+  .inner {
+    .contents {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .profile-box {
+        width: calc(50% - 10px);
+        text-align: center;
+        img {
+          width: 95%;
+        }
+      }
+    }
+  }
+}
+// 데스크탑
+@media screen and (max-width: $desktop) {
+}
+// 타블렛
+@media screen and (max-width: $tablet) {
+}
+// 모바일
+@media screen and (max-width: $mp) {
+  .profile .contents {
+    flex-wrap: wrap !important;
+    .profile-box {
+      width: 100% !important;
+    }
+  }
+}

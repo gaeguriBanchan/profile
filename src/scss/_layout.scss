@@ -1,0 +1,56 @@
+body {
+  font-family: "Noto Sans KR", "맑은 고딕", "Apple SD Gothic Neo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.64px;
+  color: #444;
+  background-color: #f5f5f5;
+  word-break: keep-all;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  background-color: #eee;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #8da0b1;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.wrap {
+  position: relative;
+  display: block;
+}
+.inner {
+  position: relative;
+  display: block;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container {
+  padding-top: 80px;
+}
+h2 {
+  padding: 50px 0;
+  color: #222;
+  font-size: 35px;
+  font-weight: 500;
+}
+h3 {
+  padding: 30px 0;
+  color: #222;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+h4 {
+}
